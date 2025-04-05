@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dagestan Cybersecurity Meetup</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="/static/favicon.png">
+</head>
+<body>
+    <div class="cyber-loader"></div>
+    <div class="grid-lines"></div>
+    
+    <header class="cyber-header">
+        <div class="cyber-overlay"></div>
+        <div class="container">
+            <div class="cyber-glitch" data-text="Dagestan Cybersecurity Meetup #2">Dagestan Cybersecurity Meetup #2</div>
+            <p class="cyber-subtitle">26.04.2025 | Махачкала | <span class="cyber-highlight"><a href=https://ctf.caspianctf.ru> CaspianCTF</span></p>
+            
+            <div class="cyber-countdown">
+                <div class="countdown-item">
+                    <span id="days">00</span>
+                    <small>Дней</small>
+                </div>
+                <div class="countdown-item">
+                    <span id="hours">00</span>
+                    <small>Часов</small>
+                </div>
+                <div class="countdown-item">
+                    <span id="minutes">00</span>
+                    <small>Минут</small>
+                </div>
+                <div class="countdown-item">
+                    <span id="seconds">00</span>
+                    <small>Секунд</small>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="cyber-nav">
+        <div class="container">
+
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link"><span class="hex">&#x2B22;</span> О митапе</a></li>
+                <li><a href="#schedule" class="nav-link"><span class="hex">&#x2B22;</span> Программа</a></li>
+                <li><a href="#speakers" class="nav-link"><span class="hex">&#x2B22;</span> Спикеры</a></li>
+                <li><a href="#ctf" class="nav-link"><span class="hex">&#x2B22;</span> CTF</a></li>
+                <li><a href="#location" class="nav-link"><span class="hex">&#x2B22;</span> Локация</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about" class="cyber-section">
+        <div class="container">
+            <h2 class="section-title"><span class="section-number">01</span> О митапе</h2>
+            <div class="cyber-card">
+                <div class="card-content">
+                    <p class="cyber-text">Dagestan Cybersecurity Meetup - это эпицентр кибербезопасности на Кавказе, где собираются эксперты, исследователи и энтузиасты для обмена знаниями и опытом.</p>
+                    <p class="cyber-text">В этом году мы представляем обновлённый формат с практико-ориентированными докладами, live-демонстрациями уязвимостей и расширенными CTF-соревнованиями.</p>
+                </div>
+                <div class="card-image">
+                    <div class="cyber-badge">
+                        <span class="badge-text">100+</span>
+                        <span class="badge-label">участников</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="schedule" class="cyber-section dark">
+        <div class="container">
+            <h2 class="section-title"><span class="section-number">02</span> Программа</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time">10:00 - 10:30</div>
+                    <div class="timeline-content">
+                        <h3>Регистрация</h3>
+                        <div class="timeline-desc">Получение бейджей и welcome-пакетов</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">10:30 - 11:30</div>
+                    <div class="timeline-content">
+                        <h3>Антифрод в Яндексе</h3>
+                        <div class="timeline-desc">Ислам Умаров, Head of Antifraud Analytics Group at Yandex</div>
+                        <div class="timeline-tag red">Доклад</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">11:30 - 12:30</div>
+                    <div class="timeline-content">
+                        <h3>Воркшоп</h3>
+                        <div class="timeline-desc">Рамазан Рамазанов, Web Security Researcher</div>
+                        <div class="timeline-tag purple">Воркшоп</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">13:30 - 13:40</div>
+                    <div class="timeline-content">
+                        <h3>Обед</h3>
+                        <div class="timeline-desc">Чуду и нетворкинг</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">14:00 - 18:00</div>
+                    <div class="timeline-content">
+                        <h3>CTF-соревнования</h3>
+                        <div class="timeline-desc">Jeopardy-style с призовым фондом</div>
+                        <a href="https://ctf.caspianctf.ru" class="cyber-button small">Let's h4ck!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="speakers" class="cyber-section">
+        <div class="container">
+            <h2 class="section-title"><span class="section-number">03</span> Спикеры</h2>
+            <div class="speakers-grid">
+                <div class="speaker-card">
+                    <div class="speaker-image">
+                        <img src="/static/img/islam.jpeg" alt="Ислам Умаров">
+                        <div class="speaker-social">
+                            <a href="https://t.me/Umarov_i"><i class="icon-telegram"></i></a>
+                            <a href="https://ru.linkedin.com/in/isum"><i class="icon-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="speaker-info">
+                        <h3>Ислам Умаров</h3>
+                        <p class="speaker-title">Head of Antifraud Analytics Group at Yandex</p>
+                        <p class="speaker-bio">Эксперт с опытом.</p>
+                    </div>
+                </div>
+                
+                <div class="speaker-card">
+                    <div class="speaker-image">
+                        <img src="/static/img/Ramazan.jpg" alt="Рамазан Рамазанов">
+                        <div class="speaker-social">
+                            <a href="https://t.me/r0hack"><i class="icon-telegram"></i></a>
+                            <a href="https://ru.linkedin.com/in/r0hack"><i class="icon-linkedin"></i></a>
+                            <a href="https://standoff365.com/profile/r0hack/"><i class="x-icon"></i></a>
+                        </div>
+                    </div>
+                    <div class="speaker-info">
+                        <h3>Рамазан Рамазанов</h3>
+                        <p class="speaker-title">Head of Application Security Testing at DeteAct</p>
+                        <p class="speaker-bio">багхантер, руководитель отдела внешних пентестов DeteAct.</p>
+                    </div>
+                </div>
+                
+                <div class="speaker-card">
+                    <div class="speaker-image">
+                        <img src="images/speaker3.jpg" alt="Даштиев Салман">
+                        <div class="speaker-social">
+                            <a href="#"><i class="icon-twitter"></i></a>
+                            <a href="#"><i class="icon-linkedin"></i></a>
+                            <a href="#"><i class="icon-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="speaker-info">
+                        <h3>Даштиев Салман</h3>
+                        <p class="speaker-title">CTF Organizer</p>
+                        <p class="speaker-bio">хзхзхзхзх.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ctf" class="cyber-section dark">
+        <div class="container">
+            <h2 class="section-title"><span class="section-number">04</span> CTF Challenge</h2>
+            <div class="ctf-grid">
+                <div class="ctf-info">
+                    <h3 class="ctf-title">CaspianCTF 2025</h3>
+                    <p class="ctf-description">Примите участие в наших CTF-соревнованиях! Задачи различного уровня сложности: от начинающих до экспертов.</p>
+                    <ul class="ctf-categories">
+                        <li><span class="category-dot web"></span> Web Security</li>
+                        <li><span class="category-dot crypto"></span> Cryptography</li>
+                        <li><span class="category-dot forensics"></span> Forensics</li>
+                        <li><span class="category-dot reversing"></span> Reverse Engineering</li>
+                        <li><span class="category-dot osint"></span> OSINT</li>
+                    </ul>
+                    <a href="https://ctf.caspianctf.ru" class="cyber-button">Перейти на CTF</a>
+                </div>
+                <div class="ctf-stats">
+                    <div class="stats-item">
+                        <div class="stats-number">4</div>
+                        <div class="stats-label">часа</div>
+                    </div>
+                    <div class="stats-item">
+                        <div class="stats-number">10+</div>
+                        <div class="stats-label">задач</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="location" class="cyber-section">
+        <div class="container">
+            <h2 class="section-title"><span class="section-number">05</span> Локация</h2>
+            <div class="location-grid">
+                <div class="location-map">
+                    <div class="map-container">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1a2b3c4d5e6f7g8h9i0j&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+                        <div class="map-overlay"></div>
+                    </div>
+                </div>
+                <div class="location-info">
+                    <h3 class="location-title">Центр компетенций ФГБОУ ВО «ДГТУ» (Технопарк ДГТУ)</h3>
+                    <p class="location-address"> г. Махачкала, пр. Имама Шамиля, 70</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="cyber-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-links">
+                    <h4>Быстрые ссылки</h4>
+                    <ul>
+                        <li><a href="#about">О митапе</a></li>
+                        <li><a href="#schedule">Программа</a></li>
+                        <li><a href="#ctf">CTF</a></li>
+                        <li><a href="#location">Место проведения</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Мы в соцсетях</h4>
+                    <div class="social-icons">
+                        <a href="https://t.me/caspianctf"><i class="icon-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dagestan Cybersecurity Meetup | CaspianCTF. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
