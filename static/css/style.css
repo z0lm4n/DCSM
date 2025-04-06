@@ -528,7 +528,7 @@ body::before {
     width: calc(50% - 40px);
     background: rgba(5, 10, 14, 0.8);
     border: 1px solid rgba(0, 240, 252, 0.1);
-    padding: 20px;
+    padding: 35px;
     position: relative;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
 }
@@ -593,7 +593,7 @@ body::before {
 /* Speakers */
 .speakers-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 30px;
     margin-top: 50px;
 }
