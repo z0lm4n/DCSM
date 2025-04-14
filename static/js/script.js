@@ -99,3 +99,51 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+window.addEventListener('message', function(e) {
+    if (e.data && e.data.timepad && e.data.timepad.registration) {
+        const registrationData = e.data.timepad.registration;
+        
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'registration', {
+                'event_category': 'form',
+                'event_label': 'Timepad'
+            });
+        }
+        
+        const widgetContainer = document.querySelector('.timepad-container');
+        const confetti = document.createElement('div');
+        confetti.className = 'cyber-confetti';
+        widgetContainer.appendChild(confetti);
+        
+        setTimeout(() => {
+            confetti.remove();
+        }, 3000);
+    }
+});
+
+window.addEventListener('message', function(e) {
+    if (e.data && e.data.timepad && e.data.timepad.widgetLoaded) {
+        const container = document.querySelector('.cyber-timepad-container');
+        
+        container.classList.remove('loading');
+        
+        const iframe = container.querySelector('iframe');
+        iframe.style.opacity = '0';
+        iframe.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        iframe.style.transform = 'translateY(20px)';
+        
+        setTimeout(() => {
+            iframe.style.opacity = '1';
+            iframe.style.transform = 'translateY(0)';
+        }, 100);
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const container = document.querySelector('.cyber-timepad-container');
+    if (container) {
+        container.classList.add('loading');
+    }
+});
+
